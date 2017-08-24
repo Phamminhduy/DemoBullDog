@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phamm.demobulldog.Care_Your_Bulldog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@drawable/background_header"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:src="@drawable/avatar_bulldog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:text="2 hours to Eat Food"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="33dp"
+            android:src="@drawable/health_icon"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toStartOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/txtNameDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milo"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/imageView2"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignBottom="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginEnd="39dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btnHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/health_backgroung"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gallery_background"
+        android:layout_marginStart="19dp"
+        android:layout_alignBaseline="@+id/btnHealth"
+        android:layout_alignBottom="@+id/btnHealth"
+        android:layout_toEndOf="@+id/btnHealth" />
+
+    <Button
+        android:id="@+id/btnReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reminder_background"
+        android:layout_below="@+id/btnHealth"
+        android:layout_alignStart="@+id/btnHealth"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnGallery"
+        android:layout_alignTop="@+id/btnReminder"
+        android:background="@drawable/details_background" />
+
+</RelativeLayout>
